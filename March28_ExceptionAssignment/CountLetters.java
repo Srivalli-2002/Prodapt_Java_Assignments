@@ -10,9 +10,10 @@ public class CountLetters {
 		System.out.println("Enter a single word : ");
 		String word = scan.nextLine();
 		word = word.toUpperCase();
+		int i=0;
 		
 		try {
-		for(int i=0; i<word.length(); i++)
+		for(i=0; i<word.length(); i++)
 		{
 			count[word.charAt(i) - 'A']++;
 		}
@@ -20,9 +21,9 @@ public class CountLetters {
 		}
 		catch(ArrayIndexOutOfBoundsException e)
 		{
-			System.out.println("Not a letter.\nexception encountered : "+e);
+			System.out.println("Not a letter.\nexception encountered : " + word.charAt(i);
 		}
-		for(int i=0; i<count.length; i++)
+		for(i=0; i<count.length; i++)
 		{
 				if(count[i] != 0) 
 					System.out.println((char)(i+'A') + ": " + count[i]);
