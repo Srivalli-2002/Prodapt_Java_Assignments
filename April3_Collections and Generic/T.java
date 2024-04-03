@@ -1,26 +1,27 @@
 package collectionsandgeneric;
 
-public class T implements Comparable{
-	public String t;
+public class T<M> implements Comparable{
+	public M t;
 
 	public T() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public T(String t) {
+	public T(M t) {
 		super();
 		this.t = t;
 	}
 
-	public String getT() {
+	public M getT() {
 		return t;
 	}
 
-	public void setT(String t) {
+	public void setT(M t) {
 		this.t = t;
 	}
-	
+
+	@Override
 	public int compareTo(Object o)
 	{
 		if(this.t.equals(o))
